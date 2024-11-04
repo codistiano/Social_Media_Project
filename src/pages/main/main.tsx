@@ -20,7 +20,6 @@ export const Main = () => {
     setPostList(
       data.docs.map((doc) => ({ ...doc.data(), id: doc.id })) as Post[]
     );
-    console.log(postsList?.map((post: Post) => post.title));
   };
 
   useEffect(() => {
